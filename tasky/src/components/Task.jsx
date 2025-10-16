@@ -1,19 +1,12 @@
-import React from 'react';
-
-const Task = (props) => {
-    
-           return (
-        <div className="card">
-            <p className="title">{props.title}</p>
-            <p>Due: {props.deadline}</p>
-            <p className="description">{props.description}</p>
-        </div>
-    )
-
-
+function Task({ title, description, deadline, priority }) {
+  return (
+    <div className="task-card">
+      <h2>{title}</h2>
+      {description && <p><em>{description}</em></p>}
+      <p>Due: {deadline}</p>
+      <p>Priority: {priority}</p>
+    </div>
+  );
 }
-
-
-
 
 export default Task;
