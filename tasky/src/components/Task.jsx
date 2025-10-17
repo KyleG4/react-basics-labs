@@ -1,11 +1,13 @@
-function Task({ title, description, deadline, priority, done, markDone }) {
+import React from 'react';
+
+function Task(props) {
   return (
-    <div className="card" style={{ backgroundColor: done ? 'lightgrey' : '#5bb4c4' }}>
-      <p className="title">{title}</p>
-      <p>Due: {deadline}</p>
-      {description && <p><em>{description}</em></p>}
-      {priority && <p className="priority">{priority}</p>}
-      <button onClick={markDone} className="doneButton">Done</button>
+    <div className="card" style={{ backgroundColor: props.done ? 'lightgrey' : '#5bb4c4' }}>
+      <p className="title">{props.title}</p>
+      <p><em>{props.description}</em></p>
+      <p>Due: {props.deadline}</p>
+      <p>{props.priority}</p>
+      <button onClick={props.markDone} className="doneButton">Done</button>
     </div>
   );
 }

@@ -59,3 +59,12 @@ button {
   background: white;
   cursor: pointer;
 }
+
+.toggleButton {
+  background-color: grey;
+  color: white;
+  font-style: normal;
+  font-weight: bold;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
