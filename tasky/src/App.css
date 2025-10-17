@@ -68,3 +68,10 @@ button {
   margin-bottom: 20px;
   cursor: pointer;
 }
+
+.deleteButton {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  color: red;
+}
