@@ -40,4 +40,6 @@ div {
 
 .description {
   font-style: italic;
+  color: #f0f9fa;
+  margin-bottom: 8px;
 }

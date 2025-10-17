@@ -1,10 +1,9 @@
-function Task({ title, description, deadline, priority }) {
+function Task({ title, description, deadline }) {
   return (
-    <div className="task-card">
-      <h2>{title}</h2>
-      {description && <p><em>{description}</em></p>}
+    <div className="card">
+      <p className="title">{title}</p>
+      {description && <p className="description"><em>{description}</em></p>}
       <p>Due: {deadline}</p>
-      <p>Priority: {priority}</p>
     </div>
   );
 }
